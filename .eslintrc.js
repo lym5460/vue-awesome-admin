@@ -12,13 +12,7 @@ module.exports = defineConfig({
   parserOptions: {
     parser: '@typescript-eslint/parser',
   },
-  globals: {
-    // script setup
-    defineProps: 'readonly',
-    defineEmits: 'readonly',
-    defineExpose: 'readonly',
-    withDefaults: 'readonly',
-  },
+  globals: {},
   extends: [
     'plugin:vue/base',
     'plugin:vue/vue3-recommended',
@@ -29,5 +23,6 @@ module.exports = defineConfig({
   plugins: ['prettier'],
   rules: {
     // 自定义你的规则
+    'no-undef': 'off',
   },
 })

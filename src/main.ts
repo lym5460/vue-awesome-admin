@@ -4,4 +4,11 @@ import App from './App.vue'
 // WindiCSS
 import 'virtual:windi.css'
 
-createApp(App).mount('#app')
+const app = createApp(App)
+
+// install all modules under './modules'
+Object.values(import.meta.globEager('./modules/*.ts')).map((i) => {
+  i.install?.({ app })
+})
+
+app.mount('#app')

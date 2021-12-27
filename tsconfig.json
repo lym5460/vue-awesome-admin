@@ -1,5 +1,12 @@
 {
   "compilerOptions": {
+    "lib": ["DOM", "ESNext"],
+    "skipLibCheck": true,
+    "noUnusedLocals": true,
+    "strictNullChecks": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": false,
+
     "target": "esnext",
     "useDefineForClassFields": true,
     "module": "esnext",
@@ -9,13 +16,14 @@
     "sourceMap": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "baseUrl": ".",
+    "baseUrl": "./",
     // 模块名到基于 baseUrl的路径映射的列表。
     "paths": {
       "@/*": ["src/*"],
       "#/*": ["types/*"]
-    }
+    },
+    "types": ["vite/client", "element-plus/global"]
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "types/**/*.d.ts"],
-  "exclude": ["node_modules", "**/*.js"]
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "types/*.d.ts"],
+  "exclude": ["node_modules", "dist"]
 }

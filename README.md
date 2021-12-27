@@ -21,16 +21,16 @@
 ## TODO
 
 - [x] 配置代码检查和风格检查 (eslint+prettier+vue+typescript 相关配置)
-- [ ] Element-Plus
+- [x] Element-Plus
 - [ ] Pina 全局状态库
 - [ ] Vue-Router >> File based routing
 - [x] 粒子化 CSS 框架 WindiCSS
 - [x] Iconify 图标集
-- [ ] I18n 国际化
+- [x] I18n 国际化
 - [ ] Layout system
 - [ ] Markdown Support
-- [ ] Components auto importing
-- [ ] APIs auto importing
+- [x] Components auto importing
+- [x] APIs auto importing
 - [ ] husky
 - [ ] GithubActions
 - [ ] E2E Testing with Cypress on GitHub Actions
