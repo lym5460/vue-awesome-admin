@@ -1,10 +1,9 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const { defineConfig } = require('eslint-define-config');
+const { defineConfig } = require('eslint-define-config')
 
 module.exports = defineConfig({
   root: true,
   env: {
-    es6: true,
     es2021: true,
     browser: true,
     node: true,
@@ -25,10 +24,10 @@ module.exports = defineConfig({
     'plugin:vue/vue3-recommended',
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
-    'prettier',
     'plugin:prettier/recommended',
   ],
+  plugins: ['prettier'],
   rules: {
     // 自定义你的规则
   },
-});
+})
