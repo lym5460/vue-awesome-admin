@@ -1,4 +1,5 @@
-import { defineConfig } from 'eslint-define-config';
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const { defineConfig } = require('eslint-define-config');
 
 module.exports = defineConfig({
   root: true,
@@ -12,7 +13,13 @@ module.exports = defineConfig({
   parserOptions: {
     parser: '@typescript-eslint/parser',
   },
-  globals: {},
+  globals: {
+    // script setup
+    defineProps: 'readonly',
+    defineEmits: 'readonly',
+    defineExpose: 'readonly',
+    withDefaults: 'readonly',
+  },
   extends: [
     'plugin:vue/base',
     'plugin:vue/vue3-recommended',
