@@ -1,13 +1,15 @@
-import { defineConfig } from 'vite';
-import vue from '@vitejs/plugin-vue';
-import path from 'path';
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+import path from 'path'
+import WindiCSS from 'vite-plugin-windicss'
 
 function _resolve(dir: string) {
-  return path.resolve(__dirname, dir);
+  return path.resolve(__dirname, dir)
 }
+
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [vue(), WindiCSS()],
   resolve: {
     alias: {
       '@': _resolve('src'),
@@ -18,4 +20,4 @@ export default defineConfig({
       '@store': _resolve('src/store'),
     },
   },
-});
+})

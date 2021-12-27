@@ -1,13 +1,11 @@
-<script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import HelloWorld from '@/components/HelloWorld.vue'
-</script>
+<script setup lang="ts"></script>
 <template>
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <h1 text="green-500 5xl underline" underline="blue-500" class="bg-yellow-300">Hello world!</h1>
+  <div class=""></div>
+  <button class="border-width-2">2222</button>
 </template>
 
-<style>
+<style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
