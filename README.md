@@ -5,27 +5,27 @@
 ## Start
 
 ```bash
-    # git clone
-    git clone https://github.com/Galaxy-Rigel/vue-awesome-admin.git
+  # git clone
+  git clone https://github.com/Galaxy-Rigel/vue-awesome-admin.git
 
-    # install dependencies
-    pnpm install
+  # install dependencies
+  pnpm install
 
-    # dev
-    pnpm dev
+  # dev
+  pnpm dev
 
-    # build
-    pnpm build
+  # build
+  pnpm build
 ```
 
 ## TODO
 
 - [x] 配置代码检查和风格检查 (eslint+prettier+vue+typescript 相关配置)
-- [] Element-Plus
+- [ ] Element-Plus
 - [ ] Pina 全局状态库
 - [ ] Vue-Router >> File based routing
 - [x] 粒子化 CSS 框架 WindiCSS
-- [ ] Iconify 图标集
+- [x] Iconify 图标集
 - [ ] I18n 国际化
 - [ ] Layout system
 - [ ] Markdown Support

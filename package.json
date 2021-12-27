@@ -10,6 +10,7 @@
     "vue": "^3.2.25"
   },
   "devDependencies": {
+    "@iconify/json": "^1.1.448",
     "@types/node": "16",
     "@typescript-eslint/eslint-plugin": "^5.8.0",
     "@typescript-eslint/parser": "^5.8.0",
@@ -22,6 +23,8 @@
     "prettier": "^2.5.1",
     "sass": "^1.45.1",
     "typescript": "^4.5.4",
+    "unplugin-icons": "^0.13.0",
+    "unplugin-vue-components": "^0.17.11",
     "vite": "^2.7.2",
     "vite-plugin-windicss": "^1.6.1",
     "vue-eslint-parser": "^8.0.1",
