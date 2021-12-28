@@ -11,6 +11,7 @@ const { t, locale } = useI18n()
   <i-carbon-accessibility color="red" class="text-xl" />
   <HelloWorld></HelloWorld>
   <el-button>primary</el-button>
+  <router-view></router-view>
 </template>
 
 <style lang="scss">

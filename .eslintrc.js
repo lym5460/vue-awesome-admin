@@ -24,5 +24,6 @@ module.exports = defineConfig({
   rules: {
     // 自定义你的规则
     'no-undef': 'off',
+    'vue/multi-word-component-names': 'off',
   },
 })
