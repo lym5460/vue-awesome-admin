@@ -34,6 +34,8 @@
     "unplugin-icons": "^0.13.0",
     "unplugin-vue-components": "^0.17.11",
     "vite": "^2.7.2",
+    "vite-plugin-pages": "^0.19.8",
+    "vite-plugin-vue-layouts": "^0.5.0",
     "vite-plugin-windicss": "^1.6.1",
     "vue-eslint-parser": "^8.0.1",
     "vue-tsc": "^0.30.0",
