@@ -22,7 +22,7 @@
       "@/*": ["src/*"],
       "#/*": ["types/*"]
     },
-    "types": ["vite/client", "element-plus/global"]
+    "types": ["vite/client", "element-plus/global", "vite-plugin-vue-layouts/client", "vite-plugin-pages/client"]
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "types/*.d.ts"],
   "exclude": ["node_modules", "dist"]

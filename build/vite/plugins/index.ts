@@ -5,6 +5,8 @@ import { createAutoImport } from './autoImport'
 import { createIconifyPlugin } from './iconify'
 import { createI18nPlugin } from './i18n'
 import { createVuePlugin } from './vue'
+import { createPagesPlugin } from './pages'
+import { createLayoutsPlugin } from './layouts'
 
 export default function createVitePlugins() {
   const vitePlugins: (Plugin | Plugin[])[] = []
@@ -26,6 +28,12 @@ export default function createVitePlugins() {
 
   //i18n
   vitePlugins.push(createI18nPlugin())
+
+  //pages:file basing routing
+  vitePlugins.push(createPagesPlugin())
+
+  // layouts
+  vitePlugins.push(createLayoutsPlugin())
 
   return vitePlugins
 }
