@@ -9,8 +9,7 @@ const messages = Object.fromEntries(
   }),
 )
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export function install({ app }: any) {
+export function install({ app }: InstallType) {
   const i18n = createI18n({
     legacy: false,
     locale: 'zh-CN',
