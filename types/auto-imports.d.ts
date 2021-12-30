@@ -23,6 +23,7 @@ declare global {
   const effectScope: typeof import('vue')['effectScope']
   const EffectScope: typeof import('vue')['EffectScope']
   const ElAside: typeof import('element-plus/es')['ElAside']
+  const ElButton: typeof import('element-plus/es')['ElButton']
   const ElContainer: typeof import('element-plus/es')['ElContainer']
   const ElFooter: typeof import('element-plus/es')['ElFooter']
   const ElHeader: typeof import('element-plus/es')['ElHeader']

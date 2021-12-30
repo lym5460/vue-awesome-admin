@@ -22,12 +22,12 @@
 
 - [x] 配置代码检查和风格检查 (eslint+prettier+vue+typescript 相关配置)
 - [x] Element-Plus
-- [ ] Pina 全局状态库
-- [ ] Vue-Router >> File based routing (vite-plugin-pages + vite-plugin-vue-layouts)
+- [x] Pina 全局状态库
+- [x] Vue-Router >> File based routing (vite-plugin-pages + vite-plugin-vue-layouts)
 - [x] 粒子化 CSS 框架 WindiCSS
 - [x] Iconify 图标集
 - [x] I18n 国际化
-- [ ] Layout system (vite-plugin-vue-layout)
+- [x] Layout system (vite-plugin-vue-layout)
 - [ ] Markdown Support
 - [x] Components auto importing
 - [x] APIs auto importing

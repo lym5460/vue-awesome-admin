@@ -8,11 +8,14 @@ export default {
 
 <template>
   <el-container class="h-screen">
-    <el-aside> 侧边栏 </el-aside>
-    <el-main>
-      <el-header>header</el-header>
-      <el-footer>footer</el-footer>
-    </el-main>
+    <el-aside class="bg-green-300"> 侧边栏 </el-aside>
+    <el-container>
+      <el-header class="bg-blue-300">header</el-header>
+      <el-main>
+        <router-view></router-view>
+      </el-main>
+      <el-footer class="bg-gray-500">footer</el-footer>
+    </el-container>
   </el-container>
 </template>
 
