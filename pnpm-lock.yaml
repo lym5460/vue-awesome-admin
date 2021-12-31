@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@element-plus/icons-vue': ^0.2.4
   '@iconify/json': ^1.1.448
   '@intlify/vite-plugin-vue-i18n': ^3.2.1
   '@types/node': '16'
@@ -35,6 +36,7 @@ specifiers:
   windicss: ^3.4.0
 
 dependencies:
+  '@element-plus/icons-vue': 0.2.4_vue@3.2.26
   '@vueuse/core': 7.4.1_vue@3.2.26
   '@vueuse/head': 0.7.4_vue@3.2.26
   '@vueuse/router': 7.4.1_vue-router@4.0.12+vue@3.2.26
@@ -115,7 +117,6 @@ packages:
       vue: ^3.2.0
     dependencies:
       vue: 3.2.26
-    dev: true
 
   /@emmetio/abbreviation/2.2.2:
     resolution: {integrity: sha512-TtE/dBnkTCct8+LntkqVrwqQao6EnPAs1YN3cUgxOxTaBlesBCY37ROUAVZrRlG64GNnVShdl/b70RfAI3w5lw==}

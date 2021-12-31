@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useCounterStore } from '@/store/couter'
 import { storeToRefs } from 'pinia'
-
+import { CircleClose } from '@element-plus/icons-vue'
 const counterStore = useCounterStore()
 const { count } = storeToRefs(counterStore)
 </script>
@@ -10,6 +10,9 @@ const { count } = storeToRefs(counterStore)
   <div>我是主页</div>
   <div>{{ count }}</div>
   <el-button @click="counterStore.addCount">add</el-button>
+  <el-icon class="text-green-400 text-2xl">
+    <circle-close />
+  </el-icon>
 </template>
 
 <style lang="scss" scoped></style>

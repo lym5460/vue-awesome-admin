@@ -9,6 +9,7 @@ declare module 'vue' {
     ElContainer: typeof import('element-plus/es')['ElContainer']
     ElFooter: typeof import('element-plus/es')['ElFooter']
     ElHeader: typeof import('element-plus/es')['ElHeader']
+    ElIcon: typeof import('element-plus/es')['ElIcon']
     ElMain: typeof import('element-plus/es')['ElMain']
     HelloWorld: typeof import('./../src/components/HelloWorld.vue')['default']
     Home: typeof import('./../src/components/Home.vue')['default']
