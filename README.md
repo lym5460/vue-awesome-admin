@@ -34,6 +34,8 @@
 - [ ] husky
 - [ ] GithubActions
 - [ ] E2E Testing with Cypress on GitHub Actions
+- [ ] Mock support
+- [ ] Dynamic theme
 
 ## Git commit 规范
 
