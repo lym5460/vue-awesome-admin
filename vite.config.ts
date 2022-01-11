@@ -15,4 +15,11 @@ export default defineConfig({
       '@store': resolve('src/store'),
     },
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: '@use "@/styles/index.scss";',
+      },
+    },
+  },
 })

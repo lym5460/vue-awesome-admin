@@ -35,7 +35,7 @@
 - [ ] GithubActions
 - [ ] E2E Testing with Cypress on GitHub Actions
 - [ ] Mock support
-- [ ] Dynamic theme
+- [ ] Naive ui + vite-plugin-theme-preprocessor
 
 ## Git commit 规范
 

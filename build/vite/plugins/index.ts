@@ -7,6 +7,9 @@ import { createI18nPlugin } from './i18n'
 import { createVuePlugin } from './vue'
 import { createPagesPlugin } from './pages'
 import { createLayoutsPlugin } from './layouts'
+import vite from 'unplugin-vue-components/vite'
+import { createThemePlugin } from './theme'
+import { createThemeHmrPlugin } from './themeHmr'
 
 export default function createVitePlugins() {
   const vitePlugins: (Plugin | Plugin[])[] = []
@@ -34,6 +37,12 @@ export default function createVitePlugins() {
 
   // layouts
   vitePlugins.push(createLayoutsPlugin())
+
+  // themes
+  vitePlugins.push(createThemePlugin())
+
+  // theme HMR must behind themePlugin
+  vitePlugins.push(createThemeHmrPlugin())
 
   return vitePlugins
 }
