@@ -1,0 +1,6 @@
+// 自动主题需要添加 !default
+$primaryColor: #fff !default;
+
+:export {
+  primaryColor: $primaryColor;
+}

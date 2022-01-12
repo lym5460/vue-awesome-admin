@@ -7,7 +7,6 @@ import { createI18nPlugin } from './i18n'
 import { createVuePlugin } from './vue'
 import { createPagesPlugin } from './pages'
 import { createLayoutsPlugin } from './layouts'
-import vite from 'unplugin-vue-components/vite'
 import { createThemePlugin } from './theme'
 import { createThemeHmrPlugin } from './themeHmr'
 

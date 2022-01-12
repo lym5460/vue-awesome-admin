@@ -4,19 +4,20 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
-    ElAside: typeof import('element-plus/es')['ElAside']
-    ElButton: typeof import('element-plus/es')['ElButton']
-    ElCol: typeof import('element-plus/es')['ElCol']
-    ElColorPicker: typeof import('element-plus/es')['ElColorPicker']
-    ElConfigProvider: typeof import('element-plus/es')['ElConfigProvider']
-    ElContainer: typeof import('element-plus/es')['ElContainer']
-    ElDatePicker: typeof import('element-plus/es')['ElDatePicker']
-    ElFooter: typeof import('element-plus/es')['ElFooter']
-    ElHeader: typeof import('element-plus/es')['ElHeader']
-    ElMain: typeof import('element-plus/es')['ElMain']
-    ElRow: typeof import('element-plus/es')['ElRow']
     HelloWorld: typeof import('./../src/components/HelloWorld.vue')['default']
     Home: typeof import('./../src/components/Home.vue')['default']
+    NButton: typeof import('naive-ui')['NButton']
+    NConfigProvider: typeof import('naive-ui')['NConfigProvider']
+    NDatePicker: typeof import('naive-ui')['NDatePicker']
+    NGlobalStyle: typeof import('naive-ui')['NGlobalStyle']
+    NH2: typeof import('naive-ui')['NH2']
+    NLayout: typeof import('naive-ui')['NLayout']
+    NLayoutContent: typeof import('naive-ui')['NLayoutContent']
+    NLayoutFooter: typeof import('naive-ui')['NLayoutFooter']
+    NLayoutHeader: typeof import('naive-ui')['NLayoutHeader']
+    NLayoutSider: typeof import('naive-ui')['NLayoutSider']
+    NSpace: typeof import('naive-ui')['NSpace']
+    NSwitch: typeof import('naive-ui')['NSwitch']
   }
 }
 

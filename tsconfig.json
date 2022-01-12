@@ -6,7 +6,6 @@
     "strictNullChecks": true,
     "forceConsistentCasingInFileNames": true,
     "allowJs": false,
-
     "target": "esnext",
     "useDefineForClassFields": true,
     "module": "esnext",
@@ -22,13 +21,7 @@
       "@/*": ["src/*"],
       "#/*": ["types/*"]
     },
-    "types": [
-      "node",
-      "vite/client",
-      "element-plus/global",
-      "vite-plugin-vue-layouts/client",
-      "vite-plugin-pages/client"
-    ]
+    "types": ["node", "vite/client", "vite-plugin-vue-layouts/client", "vite-plugin-pages/client"]
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "types/*.d.ts"],
   "exclude": ["node_modules", "dist"]

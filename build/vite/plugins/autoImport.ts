@@ -1,12 +1,12 @@
 import AutoImport from 'unplugin-auto-import/vite'
-import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
 import { Plugin } from 'vite'
 import { resolve } from '../../utils'
 
 export function createAutoImport() {
   // https://github.com/antfu/unplugin-auto-import
   const autoImportPlugin: Plugin = AutoImport({
-    resolvers: [ElementPlusResolver()],
+    resolvers: [NaiveUiResolver()],
     imports: [
       'vue',
       'vue-router',

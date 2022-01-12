@@ -1,24 +1,26 @@
 import { Plugin } from 'vite'
 import { themePreprocessorPlugin } from '@zougt/vite-plugin-theme-preprocessor'
-import { resolve } from '../../utils'
+import fs from 'fs'
+import path from 'path'
 
 export function createThemePlugin() {
+  const themeDir = path.resolve(__dirname, '../../../src/theme')
+  const multipleScopeVars = fs
+    .readdirSync(themeDir)
+    .filter((i) => i.endsWith('scss'))
+    .map((i) => {
+      return {
+        scopeName: i.slice(0, -5),
+        path: path.join(themeDir, i),
+      }
+    })
+
   const themePlugin: Plugin[] = themePreprocessorPlugin({
     scss: {
       // 是否启用任意主题色模式，这里不启用
       arbitraryMode: false,
       // 提供多组变量文件
-      multipleScopeVars: [
-        {
-          scopeName: 'default',
-          // 变量文件内容不应该夹带样式代码，设定上只需存在变量
-          path: resolve('src/theme/default.scss'),
-        },
-        {
-          scopeName: 'dark',
-          path: resolve('src/theme/dark.scss'),
-        },
-      ],
+      multipleScopeVars: multipleScopeVars,
       // css中不是由主题色变量生成的颜色，也让它抽取到主题css内，可以提高权重
       includeStyleWithColors: [
         {

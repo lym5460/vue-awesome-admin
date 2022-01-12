@@ -7,22 +7,16 @@ export default {
 </script>
 
 <template>
-  <el-container class="h-screen">
-    <el-aside class="bg-green-300"> 侧边栏 </el-aside>
-    <el-container>
-      <el-header class="bg-blue-300">header</el-header>
-      <el-main>
+  <n-layout has-sider>
+    <n-layout-sider></n-layout-sider>
+    <n-layout>
+      <n-layout-header></n-layout-header>
+      <n-layout-content content-style="padding:24px">
         <router-view></router-view>
-      </el-main>
-      <el-footer class="bg-gray-500">footer</el-footer>
-    </el-container>
-  </el-container>
+      </n-layout-content>
+      <n-layout-footer></n-layout-footer>
+    </n-layout>
+  </n-layout>
 </template>
 
-<style lang="scss" scoped>
-header {
-  width: 100%;
-  height: 60px;
-  background-color: aquamarine;
-}
-</style>
+<style lang="scss" scoped></style>

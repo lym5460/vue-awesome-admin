@@ -1,30 +1,35 @@
-import { Language } from 'element-plus/es/locale'
 import { defineStore } from 'pinia'
 import { Ref } from 'vue'
-import { en, zhCN } from '../../build/config/element-locales'
+import { zhCN, enUS } from 'naive-ui'
+import { NLocale } from 'naive-ui/lib/locales'
 
-const elementPlusLocales: { [x: string]: Language } = {
+// 需要支持其他语言可自行添加
+const naiveUILocales: { [x: string]: NLocale } = {
   'zh-CN': zhCN,
-  en: en,
+  en: enUS,
 }
 
 export const useLocaleStore = defineStore('locale', () => {
   /**
-   * 统一国际化配置：自定义国际化配置+elementPlus内容国际化，
+   * 统一国际化配置：自定义国际化配置+naiveUI国际化，
    */
   const { locale } = useI18n()
   const lang = ref(localStorage.getItem('lang') || 'zh-CN')
-  const elementPlusLocale: Ref<Language> = ref(elementPlusLocales[lang.value])
+  const naiveUILocale: Ref<NLocale> = ref(naiveUILocales[lang.value])
 
-  const changeLang = (l: string) => {
-    lang.value = l
+  /**
+   * 切换语言
+   * @param language string (zh-CN,en)
+   */
+  const switchLang = (language: string) => {
+    lang.value = language
   }
 
   watchEffect(() => {
     locale.value = lang.value
     localStorage.setItem('lang', lang.value)
-    elementPlusLocale.value = elementPlusLocales[lang.value]
+    naiveUILocale.value = naiveUILocales[lang.value]
   })
 
-  return { lang, elementPlusLocale, changeLang }
+  return { lang, naiveUILocale, switchLang }
 })

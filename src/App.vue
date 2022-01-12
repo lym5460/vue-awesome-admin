@@ -1,15 +1,20 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
 import { useLocaleStore } from './store/locale'
+import { useThemeStore } from './store/theme'
 
-const settingStore = useLocaleStore()
-const { elementPlusLocale } = storeToRefs(settingStore)
+const localeStore = useLocaleStore()
+const { naiveUILocale } = storeToRefs(localeStore)
+
+const themeStore = useThemeStore()
+const { themeOverrides, darkTheme } = storeToRefs(themeStore)
 </script>
 
 <template>
-  <el-config-provider :locale="elementPlusLocale">
+  <n-config-provider :locale="naiveUILocale" :theme="darkTheme" :theme-overrides="themeOverrides">
     <router-view></router-view>
-  </el-config-provider>
+    <n-global-style />
+  </n-config-provider>
 </template>
 
 <style lang="scss"></style>
