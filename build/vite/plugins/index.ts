@@ -9,6 +9,7 @@ import { createPagesPlugin } from './pages'
 import { createLayoutsPlugin } from './layouts'
 import { createThemePlugin } from './theme'
 import { createThemeHmrPlugin } from './themeHmr'
+import { createMarkdownPlugin } from './markdown'
 
 export default function createVitePlugins() {
   const vitePlugins: (Plugin | Plugin[])[] = []
@@ -42,6 +43,9 @@ export default function createVitePlugins() {
 
   // theme HMR must behind themePlugin
   vitePlugins.push(createThemeHmrPlugin())
+
+  // markdown
+  vitePlugins.push(createMarkdownPlugin())
 
   return vitePlugins
 }

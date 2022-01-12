@@ -7,6 +7,7 @@ import { Plugin } from 'vite'
 export function createAutoComponentPlugin() {
   // https://github.com/antfu/unplugin-vue-components
   const autoComponentPlugin: Plugin = Components({
+    extensions: ['vue', 'md'],
     include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
     resolvers: [
       // usage: {prefix}-{collection}-{icon}

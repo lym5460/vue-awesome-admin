@@ -3,6 +3,8 @@ import { useLocaleStore } from '@/store/locale'
 import { useThemeStore } from '@/store/theme'
 import { themeConfig } from '@/theme/config'
 import { useThemeVars } from 'naive-ui'
+import test from './test.md'
+
 const { t } = useI18n()
 const localeStore = useLocaleStore()
 const { switchLang } = localeStore
@@ -69,6 +71,7 @@ const railStyle = ({ focused, checked }: any) => {
         @click="switchTheme(scope as string)"
       ></n-button>
     </n-space>
+    <test></test>
   </div>
 </template>
 
