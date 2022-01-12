@@ -10,13 +10,13 @@ export const useThemeStore = defineStore('theme', () => {
   const themeScope = ref(localStorage.getItem('theme') || 'light')
   // naiveUI组件库的主题变量覆盖
   const themeOverrides: ComputedRef<GlobalThemeOverrides> = computed(() => {
-    const theme = themeConfig[themeScope.value]
     if (themeScope.value === 'dark' || themeScope.value === 'light') {
       const themeOverrides = localStorage.getItem('themeOverrides')
       return themeOverrides ? JSON.parse(themeOverrides) : {}
     } else {
-      const themeHover = Color(theme).lighten(0.3)
-      const themePressed = Color(theme).darken(0.1)
+      const theme = themeConfig[themeScope.value]
+      const themeHover = Color(theme).lighten(0.3).hex()
+      const themePressed = Color(theme).darken(0.1).hex()
       return {
         common: {
           primaryColor: theme,

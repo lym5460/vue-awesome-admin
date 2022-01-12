@@ -14,3 +14,9 @@ declare module '@zougt/*' {
   import { toggleTheme } from '@zougt/vite-plugin-theme-preprocessor/dist/browser-utils.js'
   export { toggleTheme }
 }
+
+declare module '*.md' {
+  import { ComponentOptions } from 'vue'
+  const Component: ComponentOptions
+  export default Component
+}
