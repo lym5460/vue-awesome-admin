@@ -1,6 +1,6 @@
 # vue-awesome-admin
 
-🚀 🚀 🚀 Vue3 + Vite2 + TypeScript + Element-Plus 编写的一套后台管理系统
+🚀 🚀 🚀 Vue3 + Vite2 + TypeScript + Naive-UI 编写的一套后台管理系统
 
 ## Start
 
@@ -20,14 +20,14 @@
 
 ## TODO
 
-- [x] 配置代码检查和风格检查 (eslint+prettier+vue+typescript 相关配置)
-- [x] Element-Plus
-- [x] Pina 全局状态库
+- [x] eslint+prettier+vue+typescript
+- [x] Naive-ui
+- [x] Pina
 - [x] Layout system
 - [x] File based routing
-- [x] 粒子化 CSS 框架 WindiCSS
-- [x] Iconify 图标集
-- [x] I18n 国际化
+- [x] WindiCSS
+- [x] Iconify
+- [x] I18n
 - [ ] Markdown Support
 - [x] Components auto importing
 - [x] APIs auto importing
@@ -35,7 +35,6 @@
 - [ ] GithubActions
 - [ ] E2E Testing with Cypress on GitHub Actions
 - [ ] Mock support
-- [ ] Naive ui + vite-plugin-theme-preprocessor
 
 ## Git commit 规范
 
