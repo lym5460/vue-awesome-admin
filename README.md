@@ -28,7 +28,7 @@
 - [x] WindiCSS
 - [x] Iconify
 - [x] I18n
-- [ ] Markdown Support
+- [x] Markdown Support
 - [x] Components auto importing
 - [x] APIs auto importing
 - [ ] husky
