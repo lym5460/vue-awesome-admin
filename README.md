@@ -31,7 +31,7 @@
 - [x] Markdown Support
 - [x] Components auto importing
 - [x] APIs auto importing
-- [ ] husky + lint-staged + commitlint
+- [x] husky + lint-staged + commitlint
 - [ ] GithubActions
 - [ ] E2E Testing with Cypress on GitHub Actions
 - [ ] Mock support
