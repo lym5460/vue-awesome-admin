@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@vueuse/core": "^7.5.3",
@@ -18,9 +19,12 @@
     "vue-router": "^4.0.12"
   },
   "devDependencies": {
+    "@commitlint/cli": "^16.0.2",
+    "@commitlint/config-conventional": "^16.0.0",
     "@iconify/json": "^1.1.454",
     "@intlify/vite-plugin-vue-i18n": "^3.2.1",
     "@types/color": "^3.0.2",
+    "@types/markdown-it": "^12.2.3",
     "@types/node": "^16.11.19",
     "@typescript-eslint/eslint-plugin": "^5.9.1",
     "@typescript-eslint/parser": "^5.9.1",
@@ -32,6 +36,10 @@
     "eslint-define-config": "^1.2.2",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.2.0",
+    "husky": "^7.0.4",
+    "less": "^4.1.2",
+    "lint-staged": "^12.1.7",
+    "markdown-it": "^12.3.2",
     "markdown-it-anchor": "^8.4.1",
     "markdown-it-prism": "^2.2.2",
     "prettier": "^2.5.1",
